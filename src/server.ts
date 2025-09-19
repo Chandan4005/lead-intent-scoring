@@ -215,4 +215,6 @@ app.post("/api/notify-slack", async (_req, res) => {
 
 // ---------------- Start Server ----------------
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
+const host = '0.0.0.0';
+app.listen(port, () => console.log(`Server running at http://${host}:${port}`));
+
